@@ -68,8 +68,10 @@
   margin-top: 1rem;
 }
 
-.home_categories_title{
-    
+.home-categories-box{
+  background-color: rgba(236, 233, 233, 0.7);
+  z-index: 1; /* Coloca la capa oscura detrás de la imagen */
+  border-radius: 0.5rem;
 }
 
 /* .home_categoryimg {

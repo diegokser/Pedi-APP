@@ -14,7 +14,7 @@ import pizza from "../../img/pizza.png";
 import mexican from "../../img/mexican.png";
 import vegan from "../../img/vegan.png";
 import asian from "../../img/asian.png";
-import mediterranean from "../../img/mediterranean.png";
+import spanish from "../../img/spanish.png";
 import { useNavigate } from "react-router-dom";
 
 const Categories = () => {
@@ -33,18 +33,20 @@ const Categories = () => {
           ? store.categories.map((x, index) => {
               return (
                 <div className="home_foodbox mx-0 my-3 px-0 ms-3 col-1" key={x}>
-                  <div className="me-0 pe-0 ">
-                    <img
-                      src={`/${x}.png`}
-                      alt="..."
-                      className="home_categoryimg"
-                      onClick={() => {
-                        category_searchinator(x);
-                      }}
-                    />
-                  </div>
-                  <div className="me-1 ms-0 p-0">
-                    <p className="nombreCategoria">{x}</p>
+                  <div className="home-categories-box">
+                    <div className="me-0 pe-0 ">
+                      <img
+                        src={`/${x}.png`}
+                        alt="..."
+                        className="home_categoryimg"
+                        onClick={() => {
+                          category_searchinator(x);
+                        }}
+                      />
+                    </div>
+                    <div className="me-1 ms-0 p-0">
+                      <p className="nombreCategoria">{x}</p>
+                    </div>
                   </div>
                 </div>
               );
